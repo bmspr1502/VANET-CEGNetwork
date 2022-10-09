@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+	<copy file="ceg.net.xml" />
+	<copy file="ceg.rou.xml" />
+	<copy file="ceg.add.xml" />
+	<copy file="ceg.traffic.xml" />
+	<copy file="ceg.sumocfg" type="config" />
+</launch>
+

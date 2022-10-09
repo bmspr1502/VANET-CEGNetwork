@@ -1,0 +1,858 @@
+version 2
+run General-0-20221009-18:58:51-11957
+attr configname General
+attr datetime 20221009-18:58:51
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network cegNetwork
+attr processid 11957
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.playgroundSizeX 2500m
+param *.playgroundSizeY 2500m
+param *.playgroundSizeZ 50m
+param *.annotations.draw true
+param *.obstacles.debug false
+param *.manager.updateInterval 1s
+param *.manager.host "\"localhost\""
+param *.manager.port 9999
+param *.manager.autoShutdown true
+param *.manager.launchConfig "xmldoc(\"ceg.launchd.xml\")"
+param *.rsu[0].mobility.x 2000
+param *.rsu[0].mobility.y 2000
+param *.rsu[0].mobility.z 3
+param *.rsu[*].applType "\"TraCIDemoRSU11p\""
+param *.rsu[*].appl.headerLength "80 bit"
+param *.rsu[*].appl.sendBeacons true
+param *.rsu[*].appl.dataOnSch false
+param *.rsu[*].appl.beaconInterval 5s
+param *.rsu[*].appl.beaconUserPriority 7
+param *.rsu[*].appl.dataUserPriority 5
+param *.rsu[*].nic.phy80211p.antennaOffsetZ "0 m"
+param *.connectionManager.sendDirect true
+param *.connectionManager.maxInterfDist 2600m
+param *.connectionManager.drawMaxIntfDist false
+param *.**.nic.mac1609_4.useServiceChannel false
+param *.**.nic.mac1609_4.txPower 20mW
+param *.**.nic.mac1609_4.bitrate 6Mbps
+param *.**.nic.phy80211p.minPowerLevel -110dBm
+param *.**.nic.phy80211p.useNoiseFloor true
+param *.**.nic.phy80211p.noiseFloor -98dBm
+param *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.usePropagationDelay true
+param *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+param *.node[*].nic.phy80211p.antennaOffsetY "0 m"
+param *.node[*].nic.phy80211p.antennaOffsetZ "1.895 m"
+param *.node[*].applType "\"MyVeinsApp\""
+param *.node[*].appl.headerLength "80 bit"
+param *.node[*].appl.sendBeacons false
+param *.node[*].appl.dataOnSch false
+param *.node[*].appl.beaconInterval 1s
+param *.node[*].veinsmobility.x 0
+param *.node[*].veinsmobility.y 0
+param *.node[*].veinsmobility.z 0
+param *.node[*].veinsmobility.setHostSpeed false
+param *.node[*3].veinsmobility.accidentCount 1
+param *.node[*3].veinsmobility.accidentStart 73s
+param *.node[*3].veinsmobility.accidentDuration 50s
+
+scalar cegNetwork.node[0].appl generatedWSMs 0
+scalar cegNetwork.node[0].appl receivedWSMs 0
+scalar cegNetwork.node[0].appl generatedBSMs 0
+scalar cegNetwork.node[0].appl receivedBSMs 0
+scalar cegNetwork.node[0].appl generatedWSAs 0
+scalar cegNetwork.node[0].appl receivedWSAs 0
+scalar cegNetwork.node[0].nic.phy80211p busyTime 2.0939597315436e-05
+scalar cegNetwork.node[0].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar cegNetwork.node[0].nic.mac1609_4 ReceivedBroadcasts 0
+scalar cegNetwork.node[0].nic.mac1609_4 SentPackets 0
+scalar cegNetwork.node[0].nic.mac1609_4 SentAcknowledgements 0
+scalar cegNetwork.node[0].nic.mac1609_4 RetriesExceeded 0
+scalar cegNetwork.node[0].nic.mac1609_4 SNIRLostPackets 30
+scalar cegNetwork.node[0].nic.mac1609_4 RXTXLostPackets 0
+scalar cegNetwork.node[0].nic.mac1609_4 TotalLostPackets 30
+scalar cegNetwork.node[0].nic.mac1609_4 DroppedPacketsInMac 0
+scalar cegNetwork.node[0].nic.mac1609_4 TooLittleTime 0
+scalar cegNetwork.node[0].nic.mac1609_4 TimesIntoBackoff 0
+scalar cegNetwork.node[0].nic.mac1609_4 SlotsBackoff 0
+scalar cegNetwork.node[0].nic.mac1609_4 NumInternalContention 0
+scalar cegNetwork.node[0].nic.mac1609_4 totalBusyTime 0.00312
+scalar cegNetwork.node[0].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar cegNetwork.node[0].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar cegNetwork.node[0].nic.mac1609_4 sentPackets:count 0
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar cegNetwork.node[0].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar cegNetwork.node[0].nic.mac1609_4 channelBusy:timeavg 2.0939597315436e-05
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar cegNetwork.node[0].veinsmobility startTime 1
+scalar cegNetwork.node[0].veinsmobility totalTime 148
+scalar cegNetwork.node[0].veinsmobility stopTime 150
+scalar cegNetwork.node[0].veinsmobility minSpeed 0.5
+scalar cegNetwork.node[0].veinsmobility maxSpeed 13.89
+scalar cegNetwork.node[0].veinsmobility totalDistance 1495.8649632206
+scalar cegNetwork.node[0].veinsmobility totalCO2Emission 274.84281018363
+scalar cegNetwork.node[1].appl generatedWSMs 0
+scalar cegNetwork.node[1].appl receivedWSMs 0
+scalar cegNetwork.node[1].appl generatedBSMs 0
+scalar cegNetwork.node[1].appl receivedBSMs 0
+scalar cegNetwork.node[1].appl generatedWSAs 0
+scalar cegNetwork.node[1].appl receivedWSAs 0
+scalar cegNetwork.node[1].nic.phy80211p busyTime 1.5912568306011e-05
+scalar cegNetwork.node[1].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar cegNetwork.node[1].nic.mac1609_4 ReceivedBroadcasts 0
+scalar cegNetwork.node[1].nic.mac1609_4 SentPackets 0
+scalar cegNetwork.node[1].nic.mac1609_4 SentAcknowledgements 0
+scalar cegNetwork.node[1].nic.mac1609_4 RetriesExceeded 0
+scalar cegNetwork.node[1].nic.mac1609_4 SNIRLostPackets 28
+scalar cegNetwork.node[1].nic.mac1609_4 RXTXLostPackets 0
+scalar cegNetwork.node[1].nic.mac1609_4 TotalLostPackets 28
+scalar cegNetwork.node[1].nic.mac1609_4 DroppedPacketsInMac 0
+scalar cegNetwork.node[1].nic.mac1609_4 TooLittleTime 0
+scalar cegNetwork.node[1].nic.mac1609_4 TimesIntoBackoff 0
+scalar cegNetwork.node[1].nic.mac1609_4 SlotsBackoff 0
+scalar cegNetwork.node[1].nic.mac1609_4 NumInternalContention 0
+scalar cegNetwork.node[1].nic.mac1609_4 totalBusyTime 0.002912
+scalar cegNetwork.node[1].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar cegNetwork.node[1].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar cegNetwork.node[1].nic.mac1609_4 sentPackets:count 0
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar cegNetwork.node[1].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar cegNetwork.node[1].nic.mac1609_4 channelBusy:timeavg 1.5912568306011e-05
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar cegNetwork.node[1].veinsmobility startTime 1
+scalar cegNetwork.node[1].veinsmobility totalTime 182
+scalar cegNetwork.node[1].veinsmobility stopTime 184
+scalar cegNetwork.node[1].veinsmobility minSpeed 0.5
+scalar cegNetwork.node[1].veinsmobility maxSpeed 13.89
+scalar cegNetwork.node[1].veinsmobility totalDistance 1488.2063341335
+scalar cegNetwork.node[1].veinsmobility totalCO2Emission 309.92133237929
+scalar cegNetwork.manager roiArea 0
+scalar cegNetwork.rsu[0].appl generatedWSMs 0
+scalar cegNetwork.rsu[0].appl receivedWSMs 0
+scalar cegNetwork.rsu[0].appl generatedBSMs 40
+scalar cegNetwork.rsu[0].appl receivedBSMs 0
+scalar cegNetwork.rsu[0].appl generatedWSAs 0
+scalar cegNetwork.rsu[0].appl receivedWSAs 0
+scalar cegNetwork.rsu[0].nic.phy80211p busyTime 0
+scalar cegNetwork.rsu[0].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar cegNetwork.rsu[0].nic.mac1609_4 ReceivedBroadcasts 0
+scalar cegNetwork.rsu[0].nic.mac1609_4 SentPackets 40
+scalar cegNetwork.rsu[0].nic.mac1609_4 SentAcknowledgements 0
+scalar cegNetwork.rsu[0].nic.mac1609_4 RetriesExceeded 0
+scalar cegNetwork.rsu[0].nic.mac1609_4 SNIRLostPackets 0
+scalar cegNetwork.rsu[0].nic.mac1609_4 RXTXLostPackets 0
+scalar cegNetwork.rsu[0].nic.mac1609_4 TotalLostPackets 0
+scalar cegNetwork.rsu[0].nic.mac1609_4 DroppedPacketsInMac 0
+scalar cegNetwork.rsu[0].nic.mac1609_4 TooLittleTime 0
+scalar cegNetwork.rsu[0].nic.mac1609_4 TimesIntoBackoff 40
+scalar cegNetwork.rsu[0].nic.mac1609_4 SlotsBackoff 58
+scalar cegNetwork.rsu[0].nic.mac1609_4 NumInternalContention 0
+scalar cegNetwork.rsu[0].nic.mac1609_4 totalBusyTime 0.0042
+scalar cegNetwork.rsu[0].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar cegNetwork.rsu[0].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar cegNetwork.rsu[0].nic.mac1609_4 sentPackets:count 40
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar cegNetwork.rsu[0].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar cegNetwork.rsu[0].nic.mac1609_4 channelBusy:timeavg 2.1e-05
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar cegNetwork.node[2].appl generatedWSMs 0
+scalar cegNetwork.node[2].appl receivedWSMs 0
+scalar cegNetwork.node[2].appl generatedBSMs 0
+scalar cegNetwork.node[2].appl receivedBSMs 0
+scalar cegNetwork.node[2].appl generatedWSAs 0
+scalar cegNetwork.node[2].appl receivedWSAs 0
+scalar cegNetwork.node[2].nic.phy80211p busyTime 2.1152542372881e-05
+scalar cegNetwork.node[2].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar cegNetwork.node[2].nic.mac1609_4 ReceivedBroadcasts 0
+scalar cegNetwork.node[2].nic.mac1609_4 SentPackets 0
+scalar cegNetwork.node[2].nic.mac1609_4 SentAcknowledgements 0
+scalar cegNetwork.node[2].nic.mac1609_4 RetriesExceeded 0
+scalar cegNetwork.node[2].nic.mac1609_4 SNIRLostPackets 36
+scalar cegNetwork.node[2].nic.mac1609_4 RXTXLostPackets 0
+scalar cegNetwork.node[2].nic.mac1609_4 TotalLostPackets 36
+scalar cegNetwork.node[2].nic.mac1609_4 DroppedPacketsInMac 0
+scalar cegNetwork.node[2].nic.mac1609_4 TooLittleTime 0
+scalar cegNetwork.node[2].nic.mac1609_4 TimesIntoBackoff 0
+scalar cegNetwork.node[2].nic.mac1609_4 SlotsBackoff 0
+scalar cegNetwork.node[2].nic.mac1609_4 NumInternalContention 0
+scalar cegNetwork.node[2].nic.mac1609_4 totalBusyTime 0.003744
+scalar cegNetwork.node[2].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar cegNetwork.node[2].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar cegNetwork.node[2].nic.mac1609_4 sentPackets:count 0
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar cegNetwork.node[2].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar cegNetwork.node[2].nic.mac1609_4 channelBusy:timeavg 2.1152542372881e-05
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar cegNetwork.node[2].veinsmobility startTime 23
+scalar cegNetwork.node[2].veinsmobility totalTime 177
+scalar cegNetwork.node[2].veinsmobility stopTime 200
+scalar cegNetwork.node[2].veinsmobility minSpeed 0
+scalar cegNetwork.node[2].veinsmobility maxSpeed 15.477660980375
+scalar cegNetwork.node[2].veinsmobility totalDistance 1940.9391907765
+scalar cegNetwork.node[2].veinsmobility totalCO2Emission 576.83939585581
+scalar cegNetwork.node[3].appl generatedWSMs 0
+scalar cegNetwork.node[3].appl receivedWSMs 0
+scalar cegNetwork.node[3].appl generatedBSMs 0
+scalar cegNetwork.node[3].appl receivedBSMs 0
+scalar cegNetwork.node[3].appl generatedWSAs 0
+scalar cegNetwork.node[3].appl receivedWSAs 0
+scalar cegNetwork.node[3].nic.phy80211p busyTime 2.08e-05
+scalar cegNetwork.node[3].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar cegNetwork.node[3].nic.mac1609_4 ReceivedBroadcasts 0
+scalar cegNetwork.node[3].nic.mac1609_4 SentPackets 0
+scalar cegNetwork.node[3].nic.mac1609_4 SentAcknowledgements 0
+scalar cegNetwork.node[3].nic.mac1609_4 RetriesExceeded 0
+scalar cegNetwork.node[3].nic.mac1609_4 SNIRLostPackets 35
+scalar cegNetwork.node[3].nic.mac1609_4 RXTXLostPackets 0
+scalar cegNetwork.node[3].nic.mac1609_4 TotalLostPackets 35
+scalar cegNetwork.node[3].nic.mac1609_4 DroppedPacketsInMac 0
+scalar cegNetwork.node[3].nic.mac1609_4 TooLittleTime 0
+scalar cegNetwork.node[3].nic.mac1609_4 TimesIntoBackoff 0
+scalar cegNetwork.node[3].nic.mac1609_4 SlotsBackoff 0
+scalar cegNetwork.node[3].nic.mac1609_4 NumInternalContention 0
+scalar cegNetwork.node[3].nic.mac1609_4 totalBusyTime 0.00364
+scalar cegNetwork.node[3].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar cegNetwork.node[3].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar cegNetwork.node[3].nic.mac1609_4 sentPackets:count 0
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar cegNetwork.node[3].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar cegNetwork.node[3].nic.mac1609_4 channelBusy:timeavg 2.08e-05
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar cegNetwork.node[3].veinsmobility startTime 25
+scalar cegNetwork.node[3].veinsmobility totalTime 175
+scalar cegNetwork.node[3].veinsmobility stopTime 200
+scalar cegNetwork.node[3].veinsmobility minSpeed 0
+scalar cegNetwork.node[3].veinsmobility maxSpeed 14.547460473549
+scalar cegNetwork.node[3].veinsmobility totalDistance 1116.5379276767
+scalar cegNetwork.node[3].veinsmobility totalCO2Emission 443.19500181165
+scalar cegNetwork.node[4].appl generatedWSMs 0
+scalar cegNetwork.node[4].appl receivedWSMs 0
+scalar cegNetwork.node[4].appl generatedBSMs 0
+scalar cegNetwork.node[4].appl receivedBSMs 0
+scalar cegNetwork.node[4].appl generatedWSAs 0
+scalar cegNetwork.node[4].appl receivedWSAs 0
+scalar cegNetwork.node[4].nic.phy80211p busyTime 1.8777777777778e-05
+scalar cegNetwork.node[4].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar cegNetwork.node[4].nic.mac1609_4 ReceivedBroadcasts 0
+scalar cegNetwork.node[4].nic.mac1609_4 SentPackets 0
+scalar cegNetwork.node[4].nic.mac1609_4 SentAcknowledgements 0
+scalar cegNetwork.node[4].nic.mac1609_4 RetriesExceeded 0
+scalar cegNetwork.node[4].nic.mac1609_4 SNIRLostPackets 26
+scalar cegNetwork.node[4].nic.mac1609_4 RXTXLostPackets 0
+scalar cegNetwork.node[4].nic.mac1609_4 TotalLostPackets 26
+scalar cegNetwork.node[4].nic.mac1609_4 DroppedPacketsInMac 0
+scalar cegNetwork.node[4].nic.mac1609_4 TooLittleTime 0
+scalar cegNetwork.node[4].nic.mac1609_4 TimesIntoBackoff 0
+scalar cegNetwork.node[4].nic.mac1609_4 SlotsBackoff 0
+scalar cegNetwork.node[4].nic.mac1609_4 NumInternalContention 0
+scalar cegNetwork.node[4].nic.mac1609_4 totalBusyTime 0.002704
+scalar cegNetwork.node[4].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar cegNetwork.node[4].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar cegNetwork.node[4].nic.mac1609_4 sentPackets:count 0
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar cegNetwork.node[4].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar cegNetwork.node[4].nic.mac1609_4 channelBusy:timeavg 1.8777777777778e-05
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar cegNetwork.node[4].veinsmobility startTime 56
+scalar cegNetwork.node[4].veinsmobility totalTime 144
+scalar cegNetwork.node[4].veinsmobility stopTime 200
+scalar cegNetwork.node[4].veinsmobility minSpeed 1.528189688758
+scalar cegNetwork.node[4].veinsmobility maxSpeed 14.301484501055
+scalar cegNetwork.node[4].veinsmobility totalDistance 1715.8344102412
+scalar cegNetwork.node[4].veinsmobility totalCO2Emission 423.89638811759
+scalar cegNetwork.node[5].appl generatedWSMs 0
+scalar cegNetwork.node[5].appl receivedWSMs 0
+scalar cegNetwork.node[5].appl generatedBSMs 0
+scalar cegNetwork.node[5].appl receivedBSMs 0
+scalar cegNetwork.node[5].appl generatedWSAs 0
+scalar cegNetwork.node[5].appl receivedWSAs 0
+scalar cegNetwork.node[5].nic.phy80211p busyTime 2.0955223880597e-05
+scalar cegNetwork.node[5].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar cegNetwork.node[5].nic.mac1609_4 ReceivedBroadcasts 0
+scalar cegNetwork.node[5].nic.mac1609_4 SentPackets 0
+scalar cegNetwork.node[5].nic.mac1609_4 SentAcknowledgements 0
+scalar cegNetwork.node[5].nic.mac1609_4 RetriesExceeded 0
+scalar cegNetwork.node[5].nic.mac1609_4 SNIRLostPackets 27
+scalar cegNetwork.node[5].nic.mac1609_4 RXTXLostPackets 0
+scalar cegNetwork.node[5].nic.mac1609_4 TotalLostPackets 27
+scalar cegNetwork.node[5].nic.mac1609_4 DroppedPacketsInMac 0
+scalar cegNetwork.node[5].nic.mac1609_4 TooLittleTime 0
+scalar cegNetwork.node[5].nic.mac1609_4 TimesIntoBackoff 0
+scalar cegNetwork.node[5].nic.mac1609_4 SlotsBackoff 0
+scalar cegNetwork.node[5].nic.mac1609_4 NumInternalContention 0
+scalar cegNetwork.node[5].nic.mac1609_4 totalBusyTime 0.002808
+scalar cegNetwork.node[5].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar cegNetwork.node[5].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar cegNetwork.node[5].nic.mac1609_4 sentPackets:count 0
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar cegNetwork.node[5].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar cegNetwork.node[5].nic.mac1609_4 channelBusy:timeavg 2.0955223880597e-05
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar cegNetwork.node[5].veinsmobility startTime 66
+scalar cegNetwork.node[5].veinsmobility totalTime 134
+scalar cegNetwork.node[5].veinsmobility stopTime 200
+scalar cegNetwork.node[5].veinsmobility minSpeed 0
+scalar cegNetwork.node[5].veinsmobility maxSpeed 14.085105472712
+scalar cegNetwork.node[5].veinsmobility totalDistance 1378.9857740975
+scalar cegNetwork.node[5].veinsmobility totalCO2Emission 403.23880759061
+scalar cegNetwork.node[6].appl generatedWSMs 0
+scalar cegNetwork.node[6].appl receivedWSMs 0
+scalar cegNetwork.node[6].appl generatedBSMs 0
+scalar cegNetwork.node[6].appl receivedBSMs 0
+scalar cegNetwork.node[6].appl generatedWSAs 0
+scalar cegNetwork.node[6].appl receivedWSAs 0
+scalar cegNetwork.node[6].nic.phy80211p busyTime 1.8015748031496e-05
+scalar cegNetwork.node[6].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar cegNetwork.node[6].nic.mac1609_4 ReceivedBroadcasts 0
+scalar cegNetwork.node[6].nic.mac1609_4 SentPackets 0
+scalar cegNetwork.node[6].nic.mac1609_4 SentAcknowledgements 0
+scalar cegNetwork.node[6].nic.mac1609_4 RetriesExceeded 0
+scalar cegNetwork.node[6].nic.mac1609_4 SNIRLostPackets 22
+scalar cegNetwork.node[6].nic.mac1609_4 RXTXLostPackets 0
+scalar cegNetwork.node[6].nic.mac1609_4 TotalLostPackets 22
+scalar cegNetwork.node[6].nic.mac1609_4 DroppedPacketsInMac 0
+scalar cegNetwork.node[6].nic.mac1609_4 TooLittleTime 0
+scalar cegNetwork.node[6].nic.mac1609_4 TimesIntoBackoff 0
+scalar cegNetwork.node[6].nic.mac1609_4 SlotsBackoff 0
+scalar cegNetwork.node[6].nic.mac1609_4 NumInternalContention 0
+scalar cegNetwork.node[6].nic.mac1609_4 totalBusyTime 0.002288
+scalar cegNetwork.node[6].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar cegNetwork.node[6].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar cegNetwork.node[6].nic.mac1609_4 sentPackets:count 0
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar cegNetwork.node[6].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar cegNetwork.node[6].nic.mac1609_4 channelBusy:timeavg 1.8015748031496e-05
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar cegNetwork.node[6].veinsmobility startTime 73
+scalar cegNetwork.node[6].veinsmobility totalTime 127
+scalar cegNetwork.node[6].veinsmobility stopTime 200
+scalar cegNetwork.node[6].veinsmobility minSpeed 0
+scalar cegNetwork.node[6].veinsmobility maxSpeed 12.266367404792
+scalar cegNetwork.node[6].veinsmobility totalDistance 914.77921973795
+scalar cegNetwork.node[6].veinsmobility totalCO2Emission 277.51304110871
+scalar cegNetwork.node[7].appl generatedWSMs 0
+scalar cegNetwork.node[7].appl receivedWSMs 0
+scalar cegNetwork.node[7].appl generatedBSMs 0
+scalar cegNetwork.node[7].appl receivedBSMs 0
+scalar cegNetwork.node[7].appl generatedWSAs 0
+scalar cegNetwork.node[7].appl receivedWSAs 0
+scalar cegNetwork.node[7].nic.phy80211p busyTime 2.08e-05
+scalar cegNetwork.node[7].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar cegNetwork.node[7].nic.mac1609_4 ReceivedBroadcasts 0
+scalar cegNetwork.node[7].nic.mac1609_4 SentPackets 0
+scalar cegNetwork.node[7].nic.mac1609_4 SentAcknowledgements 0
+scalar cegNetwork.node[7].nic.mac1609_4 RetriesExceeded 0
+scalar cegNetwork.node[7].nic.mac1609_4 SNIRLostPackets 23
+scalar cegNetwork.node[7].nic.mac1609_4 RXTXLostPackets 0
+scalar cegNetwork.node[7].nic.mac1609_4 TotalLostPackets 23
+scalar cegNetwork.node[7].nic.mac1609_4 DroppedPacketsInMac 0
+scalar cegNetwork.node[7].nic.mac1609_4 TooLittleTime 0
+scalar cegNetwork.node[7].nic.mac1609_4 TimesIntoBackoff 0
+scalar cegNetwork.node[7].nic.mac1609_4 SlotsBackoff 0
+scalar cegNetwork.node[7].nic.mac1609_4 NumInternalContention 0
+scalar cegNetwork.node[7].nic.mac1609_4 totalBusyTime 0.002392
+scalar cegNetwork.node[7].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar cegNetwork.node[7].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar cegNetwork.node[7].nic.mac1609_4 sentPackets:count 0
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar cegNetwork.node[7].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar cegNetwork.node[7].nic.mac1609_4 channelBusy:timeavg 2.08e-05
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar cegNetwork.node[7].veinsmobility startTime 85
+scalar cegNetwork.node[7].veinsmobility totalTime 115
+scalar cegNetwork.node[7].veinsmobility stopTime 200
+scalar cegNetwork.node[7].veinsmobility minSpeed 2.457075393782
+scalar cegNetwork.node[7].veinsmobility maxSpeed 16.044499340679
+scalar cegNetwork.node[7].veinsmobility totalDistance 1475.3972385114
+scalar cegNetwork.node[7].veinsmobility totalCO2Emission 412.20046527557
+scalar cegNetwork.node[8].appl generatedWSMs 0
+scalar cegNetwork.node[8].appl receivedWSMs 0
+scalar cegNetwork.node[8].appl generatedBSMs 0
+scalar cegNetwork.node[8].appl receivedBSMs 0
+scalar cegNetwork.node[8].appl generatedWSAs 0
+scalar cegNetwork.node[8].appl receivedWSAs 0
+scalar cegNetwork.node[8].nic.phy80211p busyTime 2.1584905660377e-05
+scalar cegNetwork.node[8].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar cegNetwork.node[8].nic.mac1609_4 ReceivedBroadcasts 0
+scalar cegNetwork.node[8].nic.mac1609_4 SentPackets 0
+scalar cegNetwork.node[8].nic.mac1609_4 SentAcknowledgements 0
+scalar cegNetwork.node[8].nic.mac1609_4 RetriesExceeded 0
+scalar cegNetwork.node[8].nic.mac1609_4 SNIRLostPackets 22
+scalar cegNetwork.node[8].nic.mac1609_4 RXTXLostPackets 0
+scalar cegNetwork.node[8].nic.mac1609_4 TotalLostPackets 22
+scalar cegNetwork.node[8].nic.mac1609_4 DroppedPacketsInMac 0
+scalar cegNetwork.node[8].nic.mac1609_4 TooLittleTime 0
+scalar cegNetwork.node[8].nic.mac1609_4 TimesIntoBackoff 0
+scalar cegNetwork.node[8].nic.mac1609_4 SlotsBackoff 0
+scalar cegNetwork.node[8].nic.mac1609_4 NumInternalContention 0
+scalar cegNetwork.node[8].nic.mac1609_4 totalBusyTime 0.002288
+scalar cegNetwork.node[8].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar cegNetwork.node[8].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar cegNetwork.node[8].nic.mac1609_4 sentPackets:count 0
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar cegNetwork.node[8].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar cegNetwork.node[8].nic.mac1609_4 channelBusy:timeavg 2.1584905660377e-05
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar cegNetwork.node[8].veinsmobility startTime 94
+scalar cegNetwork.node[8].veinsmobility totalTime 106
+scalar cegNetwork.node[8].veinsmobility stopTime 200
+scalar cegNetwork.node[8].veinsmobility minSpeed 2.3913897797
+scalar cegNetwork.node[8].veinsmobility maxSpeed 13.129995315904
+scalar cegNetwork.node[8].veinsmobility totalDistance 1095.9121728858
+scalar cegNetwork.node[8].veinsmobility totalCO2Emission 320.10955352932
+scalar cegNetwork.node[9].appl generatedWSMs 0
+scalar cegNetwork.node[9].appl receivedWSMs 0
+scalar cegNetwork.node[9].appl generatedBSMs 0
+scalar cegNetwork.node[9].appl receivedBSMs 0
+scalar cegNetwork.node[9].appl generatedWSAs 0
+scalar cegNetwork.node[9].appl receivedWSAs 0
+scalar cegNetwork.node[9].nic.phy80211p busyTime 2.1411764705882e-05
+scalar cegNetwork.node[9].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar cegNetwork.node[9].nic.mac1609_4 ReceivedBroadcasts 0
+scalar cegNetwork.node[9].nic.mac1609_4 SentPackets 0
+scalar cegNetwork.node[9].nic.mac1609_4 SentAcknowledgements 0
+scalar cegNetwork.node[9].nic.mac1609_4 RetriesExceeded 0
+scalar cegNetwork.node[9].nic.mac1609_4 SNIRLostPackets 14
+scalar cegNetwork.node[9].nic.mac1609_4 RXTXLostPackets 0
+scalar cegNetwork.node[9].nic.mac1609_4 TotalLostPackets 14
+scalar cegNetwork.node[9].nic.mac1609_4 DroppedPacketsInMac 0
+scalar cegNetwork.node[9].nic.mac1609_4 TooLittleTime 0
+scalar cegNetwork.node[9].nic.mac1609_4 TimesIntoBackoff 0
+scalar cegNetwork.node[9].nic.mac1609_4 SlotsBackoff 0
+scalar cegNetwork.node[9].nic.mac1609_4 NumInternalContention 0
+scalar cegNetwork.node[9].nic.mac1609_4 totalBusyTime 0.001456
+scalar cegNetwork.node[9].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar cegNetwork.node[9].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar cegNetwork.node[9].nic.mac1609_4 sentPackets:count 0
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar cegNetwork.node[9].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar cegNetwork.node[9].nic.mac1609_4 channelBusy:timeavg 2.1411764705882e-05
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar cegNetwork.node[9].veinsmobility startTime 132
+scalar cegNetwork.node[9].veinsmobility totalTime 68
+scalar cegNetwork.node[9].veinsmobility stopTime 200
+scalar cegNetwork.node[9].veinsmobility minSpeed 0
+scalar cegNetwork.node[9].veinsmobility maxSpeed 10.600711622733
+scalar cegNetwork.node[9].veinsmobility totalDistance 466.66764269403
+scalar cegNetwork.node[9].veinsmobility totalCO2Emission 142.67247251921
+scalar cegNetwork.node[10].appl generatedWSMs 0
+scalar cegNetwork.node[10].appl receivedWSMs 0
+scalar cegNetwork.node[10].appl generatedBSMs 0
+scalar cegNetwork.node[10].appl receivedBSMs 0
+scalar cegNetwork.node[10].appl generatedWSAs 0
+scalar cegNetwork.node[10].appl receivedWSAs 0
+scalar cegNetwork.node[10].nic.phy80211p busyTime 1.7333333333333e-05
+scalar cegNetwork.node[10].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar cegNetwork.node[10].nic.mac1609_4 ReceivedBroadcasts 0
+scalar cegNetwork.node[10].nic.mac1609_4 SentPackets 0
+scalar cegNetwork.node[10].nic.mac1609_4 SentAcknowledgements 0
+scalar cegNetwork.node[10].nic.mac1609_4 RetriesExceeded 0
+scalar cegNetwork.node[10].nic.mac1609_4 SNIRLostPackets 11
+scalar cegNetwork.node[10].nic.mac1609_4 RXTXLostPackets 0
+scalar cegNetwork.node[10].nic.mac1609_4 TotalLostPackets 11
+scalar cegNetwork.node[10].nic.mac1609_4 DroppedPacketsInMac 0
+scalar cegNetwork.node[10].nic.mac1609_4 TooLittleTime 0
+scalar cegNetwork.node[10].nic.mac1609_4 TimesIntoBackoff 0
+scalar cegNetwork.node[10].nic.mac1609_4 SlotsBackoff 0
+scalar cegNetwork.node[10].nic.mac1609_4 NumInternalContention 0
+scalar cegNetwork.node[10].nic.mac1609_4 totalBusyTime 0.001144
+scalar cegNetwork.node[10].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar cegNetwork.node[10].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar cegNetwork.node[10].nic.mac1609_4 sentPackets:count 0
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar cegNetwork.node[10].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar cegNetwork.node[10].nic.mac1609_4 channelBusy:timeavg 1.7333333333333e-05
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar cegNetwork.node[10].veinsmobility startTime 134
+scalar cegNetwork.node[10].veinsmobility totalTime 66
+scalar cegNetwork.node[10].veinsmobility stopTime 200
+scalar cegNetwork.node[10].veinsmobility minSpeed 2.2940233157482
+scalar cegNetwork.node[10].veinsmobility maxSpeed 14.630378520303
+scalar cegNetwork.node[10].veinsmobility totalDistance 775.89510726646
+scalar cegNetwork.node[10].veinsmobility totalCO2Emission 221.31247393307
+scalar cegNetwork.node[11].appl generatedWSMs 0
+scalar cegNetwork.node[11].appl receivedWSMs 0
+scalar cegNetwork.node[11].appl generatedBSMs 0
+scalar cegNetwork.node[11].appl receivedBSMs 0
+scalar cegNetwork.node[11].appl generatedWSAs 0
+scalar cegNetwork.node[11].appl receivedWSAs 0
+scalar cegNetwork.node[11].nic.phy80211p busyTime 2.1125e-05
+scalar cegNetwork.node[11].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar cegNetwork.node[11].nic.mac1609_4 ReceivedBroadcasts 0
+scalar cegNetwork.node[11].nic.mac1609_4 SentPackets 0
+scalar cegNetwork.node[11].nic.mac1609_4 SentAcknowledgements 0
+scalar cegNetwork.node[11].nic.mac1609_4 RetriesExceeded 0
+scalar cegNetwork.node[11].nic.mac1609_4 SNIRLostPackets 13
+scalar cegNetwork.node[11].nic.mac1609_4 RXTXLostPackets 0
+scalar cegNetwork.node[11].nic.mac1609_4 TotalLostPackets 13
+scalar cegNetwork.node[11].nic.mac1609_4 DroppedPacketsInMac 0
+scalar cegNetwork.node[11].nic.mac1609_4 TooLittleTime 0
+scalar cegNetwork.node[11].nic.mac1609_4 TimesIntoBackoff 0
+scalar cegNetwork.node[11].nic.mac1609_4 SlotsBackoff 0
+scalar cegNetwork.node[11].nic.mac1609_4 NumInternalContention 0
+scalar cegNetwork.node[11].nic.mac1609_4 totalBusyTime 0.001352
+scalar cegNetwork.node[11].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar cegNetwork.node[11].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar cegNetwork.node[11].nic.mac1609_4 sentPackets:count 0
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar cegNetwork.node[11].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar cegNetwork.node[11].nic.mac1609_4 channelBusy:timeavg 2.1125e-05
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar cegNetwork.node[11].veinsmobility startTime 136
+scalar cegNetwork.node[11].veinsmobility totalTime 64
+scalar cegNetwork.node[11].veinsmobility stopTime 200
+scalar cegNetwork.node[11].veinsmobility minSpeed 0.0017902902372342
+scalar cegNetwork.node[11].veinsmobility maxSpeed 17.566998919821
+scalar cegNetwork.node[11].veinsmobility totalDistance 557.08842444719
+scalar cegNetwork.node[11].veinsmobility totalCO2Emission 187.67875444432
+scalar cegNetwork.node[12].appl generatedWSMs 0
+scalar cegNetwork.node[12].appl receivedWSMs 0
+scalar cegNetwork.node[12].appl generatedBSMs 0
+scalar cegNetwork.node[12].appl receivedBSMs 0
+scalar cegNetwork.node[12].appl generatedWSAs 0
+scalar cegNetwork.node[12].appl receivedWSAs 0
+scalar cegNetwork.node[12].nic.phy80211p busyTime 2.243137254902e-05
+scalar cegNetwork.node[12].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar cegNetwork.node[12].nic.mac1609_4 ReceivedBroadcasts 0
+scalar cegNetwork.node[12].nic.mac1609_4 SentPackets 0
+scalar cegNetwork.node[12].nic.mac1609_4 SentAcknowledgements 0
+scalar cegNetwork.node[12].nic.mac1609_4 RetriesExceeded 0
+scalar cegNetwork.node[12].nic.mac1609_4 SNIRLostPackets 11
+scalar cegNetwork.node[12].nic.mac1609_4 RXTXLostPackets 0
+scalar cegNetwork.node[12].nic.mac1609_4 TotalLostPackets 11
+scalar cegNetwork.node[12].nic.mac1609_4 DroppedPacketsInMac 0
+scalar cegNetwork.node[12].nic.mac1609_4 TooLittleTime 0
+scalar cegNetwork.node[12].nic.mac1609_4 TimesIntoBackoff 0
+scalar cegNetwork.node[12].nic.mac1609_4 SlotsBackoff 0
+scalar cegNetwork.node[12].nic.mac1609_4 NumInternalContention 0
+scalar cegNetwork.node[12].nic.mac1609_4 totalBusyTime 0.001144
+scalar cegNetwork.node[12].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar cegNetwork.node[12].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar cegNetwork.node[12].nic.mac1609_4 sentPackets:count 0
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar cegNetwork.node[12].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar cegNetwork.node[12].nic.mac1609_4 channelBusy:timeavg 2.243137254902e-05
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar cegNetwork.node[12].veinsmobility startTime 149
+scalar cegNetwork.node[12].veinsmobility totalTime 51
+scalar cegNetwork.node[12].veinsmobility stopTime 200
+scalar cegNetwork.node[12].veinsmobility minSpeed 2.3610968863824
+scalar cegNetwork.node[12].veinsmobility maxSpeed 15.480550241218
+scalar cegNetwork.node[12].veinsmobility totalDistance 582.07688658375
+scalar cegNetwork.node[12].veinsmobility totalCO2Emission 192.14668622686
+scalar cegNetwork.node[13].appl generatedWSMs 0
+scalar cegNetwork.node[13].appl receivedWSMs 0
+scalar cegNetwork.node[13].appl generatedBSMs 0
+scalar cegNetwork.node[13].appl receivedBSMs 0
+scalar cegNetwork.node[13].appl generatedWSAs 0
+scalar cegNetwork.node[13].appl receivedWSAs 0
+scalar cegNetwork.node[13].nic.phy80211p busyTime 2.08e-05
+scalar cegNetwork.node[13].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar cegNetwork.node[13].nic.mac1609_4 ReceivedBroadcasts 0
+scalar cegNetwork.node[13].nic.mac1609_4 SentPackets 0
+scalar cegNetwork.node[13].nic.mac1609_4 SentAcknowledgements 0
+scalar cegNetwork.node[13].nic.mac1609_4 RetriesExceeded 0
+scalar cegNetwork.node[13].nic.mac1609_4 SNIRLostPackets 10
+scalar cegNetwork.node[13].nic.mac1609_4 RXTXLostPackets 0
+scalar cegNetwork.node[13].nic.mac1609_4 TotalLostPackets 10
+scalar cegNetwork.node[13].nic.mac1609_4 DroppedPacketsInMac 0
+scalar cegNetwork.node[13].nic.mac1609_4 TooLittleTime 0
+scalar cegNetwork.node[13].nic.mac1609_4 TimesIntoBackoff 0
+scalar cegNetwork.node[13].nic.mac1609_4 SlotsBackoff 0
+scalar cegNetwork.node[13].nic.mac1609_4 NumInternalContention 0
+scalar cegNetwork.node[13].nic.mac1609_4 totalBusyTime 0.00104
+scalar cegNetwork.node[13].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar cegNetwork.node[13].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar cegNetwork.node[13].nic.mac1609_4 sentPackets:count 0
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar cegNetwork.node[13].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar cegNetwork.node[13].nic.mac1609_4 channelBusy:timeavg 2.08e-05
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar cegNetwork.node[13].veinsmobility startTime 150
+scalar cegNetwork.node[13].veinsmobility totalTime 50
+scalar cegNetwork.node[13].veinsmobility stopTime 200
+scalar cegNetwork.node[13].veinsmobility minSpeed 0.95315013989763
+scalar cegNetwork.node[13].veinsmobility maxSpeed 13.069171713057
+scalar cegNetwork.node[13].veinsmobility totalDistance 505.98526728303
+scalar cegNetwork.node[13].veinsmobility totalCO2Emission 153.52770083667
+scalar cegNetwork.node[14].appl generatedWSMs 0
+scalar cegNetwork.node[14].appl receivedWSMs 0
+scalar cegNetwork.node[14].appl generatedBSMs 0
+scalar cegNetwork.node[14].appl receivedBSMs 0
+scalar cegNetwork.node[14].appl generatedWSAs 0
+scalar cegNetwork.node[14].appl receivedWSAs 0
+scalar cegNetwork.node[14].nic.phy80211p busyTime 1.4054054054054e-05
+scalar cegNetwork.node[14].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar cegNetwork.node[14].nic.mac1609_4 ReceivedBroadcasts 0
+scalar cegNetwork.node[14].nic.mac1609_4 SentPackets 0
+scalar cegNetwork.node[14].nic.mac1609_4 SentAcknowledgements 0
+scalar cegNetwork.node[14].nic.mac1609_4 RetriesExceeded 0
+scalar cegNetwork.node[14].nic.mac1609_4 SNIRLostPackets 5
+scalar cegNetwork.node[14].nic.mac1609_4 RXTXLostPackets 0
+scalar cegNetwork.node[14].nic.mac1609_4 TotalLostPackets 5
+scalar cegNetwork.node[14].nic.mac1609_4 DroppedPacketsInMac 0
+scalar cegNetwork.node[14].nic.mac1609_4 TooLittleTime 0
+scalar cegNetwork.node[14].nic.mac1609_4 TimesIntoBackoff 0
+scalar cegNetwork.node[14].nic.mac1609_4 SlotsBackoff 0
+scalar cegNetwork.node[14].nic.mac1609_4 NumInternalContention 0
+scalar cegNetwork.node[14].nic.mac1609_4 totalBusyTime 0.00052
+scalar cegNetwork.node[14].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar cegNetwork.node[14].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar cegNetwork.node[14].nic.mac1609_4 sentPackets:count 0
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar cegNetwork.node[14].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar cegNetwork.node[14].nic.mac1609_4 channelBusy:timeavg 1.4054054054054e-05
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar cegNetwork.node[14].veinsmobility startTime 163
+scalar cegNetwork.node[14].veinsmobility totalTime 37
+scalar cegNetwork.node[14].veinsmobility stopTime 200
+scalar cegNetwork.node[14].veinsmobility minSpeed 0
+scalar cegNetwork.node[14].veinsmobility maxSpeed 12.783453619434
+scalar cegNetwork.node[14].veinsmobility totalDistance 277.09897448804
+scalar cegNetwork.node[14].veinsmobility totalCO2Emission 79.952281393563
+scalar cegNetwork.node[15].appl generatedWSMs 0
+scalar cegNetwork.node[15].appl receivedWSMs 0
+scalar cegNetwork.node[15].appl generatedBSMs 0
+scalar cegNetwork.node[15].appl receivedBSMs 0
+scalar cegNetwork.node[15].appl generatedWSAs 0
+scalar cegNetwork.node[15].appl receivedWSAs 0
+scalar cegNetwork.node[15].nic.phy80211p busyTime 2.3111111111111e-05
+scalar cegNetwork.node[15].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar cegNetwork.node[15].nic.mac1609_4 ReceivedBroadcasts 0
+scalar cegNetwork.node[15].nic.mac1609_4 SentPackets 0
+scalar cegNetwork.node[15].nic.mac1609_4 SentAcknowledgements 0
+scalar cegNetwork.node[15].nic.mac1609_4 RetriesExceeded 0
+scalar cegNetwork.node[15].nic.mac1609_4 SNIRLostPackets 6
+scalar cegNetwork.node[15].nic.mac1609_4 RXTXLostPackets 0
+scalar cegNetwork.node[15].nic.mac1609_4 TotalLostPackets 6
+scalar cegNetwork.node[15].nic.mac1609_4 DroppedPacketsInMac 0
+scalar cegNetwork.node[15].nic.mac1609_4 TooLittleTime 0
+scalar cegNetwork.node[15].nic.mac1609_4 TimesIntoBackoff 0
+scalar cegNetwork.node[15].nic.mac1609_4 SlotsBackoff 0
+scalar cegNetwork.node[15].nic.mac1609_4 NumInternalContention 0
+scalar cegNetwork.node[15].nic.mac1609_4 totalBusyTime 0.000624
+scalar cegNetwork.node[15].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar cegNetwork.node[15].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar cegNetwork.node[15].nic.mac1609_4 sentPackets:count 0
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar cegNetwork.node[15].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar cegNetwork.node[15].nic.mac1609_4 channelBusy:timeavg 2.3111111111111e-05
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar cegNetwork.node[15].veinsmobility startTime 173
+scalar cegNetwork.node[15].veinsmobility totalTime 27
+scalar cegNetwork.node[15].veinsmobility stopTime 200
+scalar cegNetwork.node[15].veinsmobility minSpeed 2.0628672807477
+scalar cegNetwork.node[15].veinsmobility maxSpeed 13.697361670284
+scalar cegNetwork.node[15].veinsmobility totalDistance 269.1071401469
+scalar cegNetwork.node[15].veinsmobility totalCO2Emission 91.762896671674
+scalar cegNetwork.node[16].appl generatedWSMs 0
+scalar cegNetwork.node[16].appl receivedWSMs 0
+scalar cegNetwork.node[16].appl generatedBSMs 0
+scalar cegNetwork.node[16].appl receivedBSMs 0
+scalar cegNetwork.node[16].appl generatedWSAs 0
+scalar cegNetwork.node[16].appl receivedWSAs 0
+scalar cegNetwork.node[16].nic.phy80211p busyTime 9.0434782608696e-06
+scalar cegNetwork.node[16].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar cegNetwork.node[16].nic.mac1609_4 ReceivedBroadcasts 0
+scalar cegNetwork.node[16].nic.mac1609_4 SentPackets 0
+scalar cegNetwork.node[16].nic.mac1609_4 SentAcknowledgements 0
+scalar cegNetwork.node[16].nic.mac1609_4 RetriesExceeded 0
+scalar cegNetwork.node[16].nic.mac1609_4 SNIRLostPackets 2
+scalar cegNetwork.node[16].nic.mac1609_4 RXTXLostPackets 0
+scalar cegNetwork.node[16].nic.mac1609_4 TotalLostPackets 2
+scalar cegNetwork.node[16].nic.mac1609_4 DroppedPacketsInMac 0
+scalar cegNetwork.node[16].nic.mac1609_4 TooLittleTime 0
+scalar cegNetwork.node[16].nic.mac1609_4 TimesIntoBackoff 0
+scalar cegNetwork.node[16].nic.mac1609_4 SlotsBackoff 0
+scalar cegNetwork.node[16].nic.mac1609_4 NumInternalContention 0
+scalar cegNetwork.node[16].nic.mac1609_4 totalBusyTime 0.000208
+scalar cegNetwork.node[16].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar cegNetwork.node[16].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar cegNetwork.node[16].nic.mac1609_4 sentPackets:count 0
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar cegNetwork.node[16].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar cegNetwork.node[16].nic.mac1609_4 channelBusy:timeavg 9.0434782608696e-06
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar cegNetwork.node[16].veinsmobility startTime 177
+scalar cegNetwork.node[16].veinsmobility totalTime 23
+scalar cegNetwork.node[16].veinsmobility stopTime 200
+scalar cegNetwork.node[16].veinsmobility minSpeed 1.4225352433976
+scalar cegNetwork.node[16].veinsmobility maxSpeed 14.390555801105
+scalar cegNetwork.node[16].veinsmobility totalDistance 260.95967426536
+scalar cegNetwork.node[16].veinsmobility totalCO2Emission 71.17509704164
+scalar cegNetwork.node[17].appl generatedWSMs 0
+scalar cegNetwork.node[17].appl receivedWSMs 0
+scalar cegNetwork.node[17].appl generatedBSMs 0
+scalar cegNetwork.node[17].appl receivedBSMs 0
+scalar cegNetwork.node[17].appl generatedWSAs 0
+scalar cegNetwork.node[17].appl receivedWSAs 0
+scalar cegNetwork.node[17].nic.phy80211p busyTime 2.2285714285714e-05
+scalar cegNetwork.node[17].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar cegNetwork.node[17].nic.mac1609_4 ReceivedBroadcasts 0
+scalar cegNetwork.node[17].nic.mac1609_4 SentPackets 0
+scalar cegNetwork.node[17].nic.mac1609_4 SentAcknowledgements 0
+scalar cegNetwork.node[17].nic.mac1609_4 RetriesExceeded 0
+scalar cegNetwork.node[17].nic.mac1609_4 SNIRLostPackets 3
+scalar cegNetwork.node[17].nic.mac1609_4 RXTXLostPackets 0
+scalar cegNetwork.node[17].nic.mac1609_4 TotalLostPackets 3
+scalar cegNetwork.node[17].nic.mac1609_4 DroppedPacketsInMac 0
+scalar cegNetwork.node[17].nic.mac1609_4 TooLittleTime 0
+scalar cegNetwork.node[17].nic.mac1609_4 TimesIntoBackoff 0
+scalar cegNetwork.node[17].nic.mac1609_4 SlotsBackoff 0
+scalar cegNetwork.node[17].nic.mac1609_4 NumInternalContention 0
+scalar cegNetwork.node[17].nic.mac1609_4 totalBusyTime 0.000312
+scalar cegNetwork.node[17].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar cegNetwork.node[17].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar cegNetwork.node[17].nic.mac1609_4 sentPackets:count 0
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar cegNetwork.node[17].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar cegNetwork.node[17].nic.mac1609_4 channelBusy:timeavg 2.2285714285714e-05
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar cegNetwork.node[17].veinsmobility startTime 186
+scalar cegNetwork.node[17].veinsmobility totalTime 14
+scalar cegNetwork.node[17].veinsmobility stopTime 200
+scalar cegNetwork.node[17].veinsmobility minSpeed 1.754513483448
+scalar cegNetwork.node[17].veinsmobility maxSpeed 13.695148260985
+scalar cegNetwork.node[17].veinsmobility totalDistance 150.31947871721
+scalar cegNetwork.node[17].veinsmobility totalCO2Emission 48.957639250089
+scalar cegNetwork.node[18].appl generatedWSMs 0
+scalar cegNetwork.node[18].appl receivedWSMs 0
+scalar cegNetwork.node[18].appl generatedBSMs 0
+scalar cegNetwork.node[18].appl receivedBSMs 0
+scalar cegNetwork.node[18].appl generatedWSAs 0
+scalar cegNetwork.node[18].appl receivedWSAs 0
+scalar cegNetwork.node[18].nic.phy80211p busyTime 2.08e-05
+scalar cegNetwork.node[18].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar cegNetwork.node[18].nic.mac1609_4 ReceivedBroadcasts 0
+scalar cegNetwork.node[18].nic.mac1609_4 SentPackets 0
+scalar cegNetwork.node[18].nic.mac1609_4 SentAcknowledgements 0
+scalar cegNetwork.node[18].nic.mac1609_4 RetriesExceeded 0
+scalar cegNetwork.node[18].nic.mac1609_4 SNIRLostPackets 2
+scalar cegNetwork.node[18].nic.mac1609_4 RXTXLostPackets 0
+scalar cegNetwork.node[18].nic.mac1609_4 TotalLostPackets 2
+scalar cegNetwork.node[18].nic.mac1609_4 DroppedPacketsInMac 0
+scalar cegNetwork.node[18].nic.mac1609_4 TooLittleTime 0
+scalar cegNetwork.node[18].nic.mac1609_4 TimesIntoBackoff 0
+scalar cegNetwork.node[18].nic.mac1609_4 SlotsBackoff 0
+scalar cegNetwork.node[18].nic.mac1609_4 NumInternalContention 0
+scalar cegNetwork.node[18].nic.mac1609_4 totalBusyTime 0.000208
+scalar cegNetwork.node[18].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar cegNetwork.node[18].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar cegNetwork.node[18].nic.mac1609_4 sentPackets:count 0
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar cegNetwork.node[18].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar cegNetwork.node[18].nic.mac1609_4 channelBusy:timeavg 2.08e-05
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar cegNetwork.node[18].veinsmobility startTime 190
+scalar cegNetwork.node[18].veinsmobility totalTime 10
+scalar cegNetwork.node[18].veinsmobility stopTime 200
+scalar cegNetwork.node[18].veinsmobility minSpeed 1.9275127517292
+scalar cegNetwork.node[18].veinsmobility maxSpeed 12.807754434762
+scalar cegNetwork.node[18].veinsmobility totalDistance 76.855315739437
+scalar cegNetwork.node[18].veinsmobility totalCO2Emission 34.129677665331
+scalar cegNetwork.node[19].appl generatedWSMs 0
+scalar cegNetwork.node[19].appl receivedWSMs 0
+scalar cegNetwork.node[19].appl generatedBSMs 0
+scalar cegNetwork.node[19].appl receivedBSMs 0
+scalar cegNetwork.node[19].appl generatedWSAs 0
+scalar cegNetwork.node[19].appl receivedWSAs 0
+scalar cegNetwork.node[19].nic.phy80211p busyTime 0.000104
+scalar cegNetwork.node[19].nic.mac1609_4 ReceivedUnicastPackets 0
+scalar cegNetwork.node[19].nic.mac1609_4 ReceivedBroadcasts 0
+scalar cegNetwork.node[19].nic.mac1609_4 SentPackets 0
+scalar cegNetwork.node[19].nic.mac1609_4 SentAcknowledgements 0
+scalar cegNetwork.node[19].nic.mac1609_4 RetriesExceeded 0
+scalar cegNetwork.node[19].nic.mac1609_4 SNIRLostPackets 1
+scalar cegNetwork.node[19].nic.mac1609_4 RXTXLostPackets 0
+scalar cegNetwork.node[19].nic.mac1609_4 TotalLostPackets 1
+scalar cegNetwork.node[19].nic.mac1609_4 DroppedPacketsInMac 0
+scalar cegNetwork.node[19].nic.mac1609_4 TooLittleTime 0
+scalar cegNetwork.node[19].nic.mac1609_4 TimesIntoBackoff 0
+scalar cegNetwork.node[19].nic.mac1609_4 SlotsBackoff 0
+scalar cegNetwork.node[19].nic.mac1609_4 NumInternalContention 0
+scalar cegNetwork.node[19].nic.mac1609_4 totalBusyTime 0.000104
+scalar cegNetwork.node[19].nic.mac1609_4 retriesExceeded:count 0
+attr source org_car2x_veins_modules_mac_sigRetriesExceeded
+scalar cegNetwork.node[19].nic.mac1609_4 sentAcks:count 0
+attr source org_car2x_veins_modules_mac_sigSentAck
+scalar cegNetwork.node[19].nic.mac1609_4 sentPackets:count 0
+attr source org_car2x_veins_modules_mac_sigSentPacket
+scalar cegNetwork.node[19].nic.mac1609_4 collisions:count 0
+attr source org_car2x_veins_modules_mac_sigCollision
+scalar cegNetwork.node[19].nic.mac1609_4 channelBusy:timeavg 0.000104
+attr source org_car2x_veins_modules_mac_sigChannelBusy
+scalar cegNetwork.node[19].veinsmobility startTime 199
+scalar cegNetwork.node[19].veinsmobility totalTime 1
+scalar cegNetwork.node[19].veinsmobility stopTime 200
+scalar cegNetwork.node[19].veinsmobility minSpeed 1.4269208617508
+scalar cegNetwork.node[19].veinsmobility maxSpeed 1.4269208617508
+scalar cegNetwork.node[19].veinsmobility totalDistance 1.4269208617508
+scalar cegNetwork.node[19].veinsmobility totalCO2Emission 0
+

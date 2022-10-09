@@ -1,0 +1,105 @@
+                                                                
+version 2
+run Default-0-20221009-18:19:14-10673
+attr configname Default
+attr datetime 20221009-18:19:14
+attr experiment Default
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network cegNetwork
+attr processid 10673
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.playgroundSizeX 2500m
+param *.playgroundSizeY 2500m
+param *.playgroundSizeZ 50m
+param *.annotations.draw true
+param *.manager.updateInterval 1s
+param *.manager.host "\"localhost\""
+param *.manager.port 9999
+param *.manager.autoShutdown true
+param *.manager.launchConfig "xmldoc(\"ceg.launchd.xml\")"
+param *.rsu[0].mobility.x 2000
+param *.rsu[0].mobility.y 2000
+param *.rsu[0].mobility.z 3
+param *.rsu[*].applType "\"TraCIDemoRSU11p\""
+param *.rsu[*].appl.headerLength "80 bit"
+param *.rsu[*].appl.sendBeacons true
+param *.rsu[*].appl.dataOnSch false
+param *.rsu[*].appl.beaconInterval 5s
+param *.rsu[*].appl.beaconUserPriority 7
+param *.rsu[*].appl.dataUserPriority 5
+param *.rsu[*].nic.phy80211p.antennaOffsetZ "0 m"
+param *.connectionManager.sendDirect true
+param *.connectionManager.maxInterfDist 2600m
+param *.connectionManager.drawMaxIntfDist false
+param *.**.nic.mac1609_4.useServiceChannel false
+param *.**.nic.mac1609_4.txPower 20mW
+param *.**.nic.mac1609_4.bitrate 6Mbps
+param *.**.nic.phy80211p.minPowerLevel -110dBm
+param *.**.nic.phy80211p.useNoiseFloor true
+param *.**.nic.phy80211p.noiseFloor -98dBm
+param *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+param *.**.nic.phy80211p.usePropagationDelay true
+param *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+param *.node[*].nic.phy80211p.antennaOffsetY "0 m"
+param *.node[*].nic.phy80211p.antennaOffsetZ "1.895 m"
+param *.node[*].applType "\"MyVeinsApp\""
+param *.node[*].appl.headerLength "80 bit"
+param *.node[*].appl.sendBeacons false
+param *.node[*].appl.dataOnSch false
+param *.node[*].appl.beaconInterval 1s
+param *.node[*].veinsmobility.x 0
+param *.node[*].veinsmobility.y 0
+param *.node[*].veinsmobility.z 0
+param *.node[*].veinsmobility.setHostSpeed false
+param *.node[*0].veinsmobility.accidentCount 0
+param *.node[*0].veinsmobility.accidentStart 73s
+param *.node[*0].veinsmobility.accidentDuration 50s
+
+vector 0 cegNetwork.node[0].veinsmobility posx ETV
+vector 1 cegNetwork.node[0].veinsmobility posy ETV
+vector 2 cegNetwork.node[1].veinsmobility posx ETV
+vector 3 cegNetwork.node[1].veinsmobility posy ETV
+0	2556 11 2 2 1 1 1 23.4 23.4 23.4 547.56
+1	2567 12 2 2 1 1 1 321.8 321.8 321.8 103555.24
+2	2579 13 2 2 1 1 1 1323.4 1323.4 1323.4 1751387.56
+3	2592 12 2 2 1 1 1 321.8 321.8 321.8 103555.24
+vector 4 cegNetwork.node[0].veinsmobility speed ETV
+vector 5 cegNetwork.node[1].veinsmobility speed ETV
+0	2708 22 3 3 2 2 1 23.470721749036 23.470721749036 23.470721749036 550.87477942066
+1	2730 22 3 3 2 2 1 322.29505224325 322.29505224325 322.29505224325 103874.10070048
+2	2752 21 3 3 2 2 1 1323.329278251 1323.329278251 1323.329278251 1751200.3786762
+3	2773 22 3 3 2 2 1 322.29505224325 322.29505224325 322.29505224325 103874.10070048
+4	2795 10 3 3 2 2 1 0.5 0.5 0.5 0.25
+5	2805 10 3 3 2 2 1 0.5 0.5 0.5 0.25
+vector 6 cegNetwork.node[0].veinsmobility acceleration ETV
+vector 7 cegNetwork.node[0].veinsmobility co2emission ETV
+vector 8 cegNetwork.node[1].veinsmobility acceleration ETV
+vector 9 cegNetwork.node[1].veinsmobility co2emission ETV
+0	3049 22 4 4 3 3 1 23.612165247107 23.612165247107 23.612165247107 557.53434765671
+1	3071 22 4 4 3 3 1 323.28515672975 323.28515672975 323.28515672975 104513.29256178
+2	3093 22 4 4 3 3 1 1322.8198982921 1322.8198982921 1322.8198982921 1749852.4833176
+3	3115 22 4 4 3 3 1 323.10806102472 323.10806102472 323.10806102472 104398.81909915
+4	3137 8 4 4 3 3 1 1 1 1 1
+5	3145 8 4 4 3 3 1 1 1 1 1
+6	3153 10 4 4 3 3 1 0.5 0.5 0.5 0.25
+7	3163 20 4 4 3 3 1 1.27883237888 1.27883237888 1.27883237888 1.6354122532719
+8	3183 10 4 4 3 3 1 0.5 0.5 0.5 0.25
+9	3193 20 4 4 3 3 1 1.27883237888 1.27883237888 1.27883237888 1.6354122532719
+0	3213 22 5 5 4 4 1 24.152318611882 24.152318611882 24.152318611882 583.33449432986
+1	3235 22 5 5 4 4 1 324.65386435314 324.65386435314 324.65386435314 105400.13163942
+2	3257 14 5 5 4 4 1 1321.38 1321.38 1321.38 1746045.1044
+3	3271 12 5 5 4 4 1 323.4 323.4 323.4 104587.56
+4	3283 10 5 5 4 4 1 1.5 1.5 1.5 2.25
+5	3293 10 5 5 4 4 1 1.5 1.5 1.5 2.25
+6	3303 10 5 5 4 4 1 0.5 0.5 0.5 0.25
+7	3313 20 5 5 4 4 1 1.36342177872 1.36342177872 1.36342177872 1.858918946688
+8	3333 10 5 5 4 4 1 0.5 0.5 0.5 0.25
+9	3343 20 5 5 4 4 1 1.36342177872 1.36342177872 1.36342177872 1.858918946688
